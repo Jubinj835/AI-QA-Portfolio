@@ -1,0 +1,7 @@
+deepeval>=4.2.3
+ollama>=0.6.2
+pytest>=9.1.1
+httpx>=0.28.1
+httpcore>=1.0.9
+pydantic>=2.9
+anyio>=4.15.1
