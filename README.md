@@ -8,7 +8,8 @@ A professional, local-first AI Quality Assurance and evaluation portfolio projec
 * **Language:** Python 3.12
 * **Testing Framework:** `pytest`
 * **Evaluation Framework:** `deepeval`
-* **Local LLM Runtime:** `ollama`
+* **Local LLM Runtime:** `ollama` (`deepseek-r1:1.5b`)
+* **CI/CD:** GitHub Actions (Push, PR, and Daily Cron triggers)
 
 ---
 
@@ -16,11 +17,17 @@ A professional, local-first AI Quality Assurance and evaluation portfolio projec
 ```text
 AI-QA-Portfolio/
 │
+├── .github/
+│   └── workflows/
+│       └── ai_qa_tests.yml
+│
 ├── tests/
 │   ├── lesson1_test.py
 │   ├── lesson2_deepEval_test.py
-│   └── lesson3_faithfulness_test.py
+│   ├── lesson3_faithfulness_test.py
+│   └── lesson4_advanced_thresholds.py
 │
 ├── run_evals.py
 ├── requirements.txt
-└── .gitignore
+├── .gitignore
+└── README.md
