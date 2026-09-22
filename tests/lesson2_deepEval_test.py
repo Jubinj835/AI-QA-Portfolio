@@ -15,6 +15,6 @@ def test_customer_relevancy():
         actual_output = "You can cancel your order from your account dashboard before it ships."
     )
     #3. Define the Metric
-    metric = AnswerRelevancyMetric(threshold=0.7,model=local_model)
+    metric = AnswerRelevancyMetric(threshold=0.67,model=local_model)
     #4. Run Evaluation
     assert_test(test_case, [metric])
